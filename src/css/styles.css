@@ -15,6 +15,9 @@ body {
   display: flex;
   justify-content: center;
   color: #fff;
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  
 }
 
 .cartao {
@@ -165,4 +168,54 @@ body::-webkit-scrollbar-track {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #c08057;
+}
+
+@media(max-width: 768px) {
+  body {
+      background-position: center;
+      padding: 0 15px;
+  }
+
+  .slider {
+      gap: 10px;
+  }
+}
+
+@media(max-width: 496px) {
+  .lista-personagens {
+      width: 250px;
+  }
+
+  .imagem-carta {
+      width: 100%;
+  }
+
+  .slider {
+      position: relative;
+  }
+
+  .btn-seta {
+      position: absolute;
+      bottom: -13%;
+  }
+
+  #btn-avancar {
+      right: 20%;
+  }
+
+  #btn-voltar {
+      left: 20%;
+  }
+}
+
+@media(max-width: 375px) {
+  body {
+      justify-content: start;
+      padding-top: 10px;
+      gap: 10px;
+  }
+
+  .cabecalho {
+      font-size: 12px;
+  }
 }
